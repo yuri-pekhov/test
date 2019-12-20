@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+
+
+  <script type="text/javascript">
+
+  	function  first (){
+
+  		do {
+                num = prompt('Task 1' + '\n' + 'Enter the number', '');
+                if (num === '' || isNaN(num)) {
+                    alert('Not a number or empty, please try again');
+                    
+                }else if(num > 7){
+                    alert('Hi');
+                    break;
+                }else(
+                    alert('The number is lower than 7 or equal to 7')
+                );
+            } while (num !== null);
+
+        
+
+  	}
+first();
+
+  	// function first(){
+
+  	// let num;
+  	// do{
+  	// 	num = prompt("Task 1" + "\n" + "Input value", "");
+
+  	// }while(num <=7);
+  	// if(num > 7){
+  	// 	alert("hello");
+  	// }
+
+
+  	// }
+  	// first()
+
+function second(){
+
+
+	let name = "Вячеслав"
+	let value;
+	do {
+	value = prompt("Task 2" + "\n" + "Input Name ","")
+	if (value == name) {
+		alert("hello" + " " + value);
+		break;
+	}
+	else alert("Нет такого имени")
+	}while(value !== name);
+}
+
+second();
+
+
+function randomInteger(min, max) {
+  
+  let rand = min - 0.5 + Math.random() * (max - min + 1);
+  return Math.round(rand);
+}
+
+
+function third(){
+	var arr = [];
+	var arr2 = [];
+	for (i = 0; i < 20; i++){
+		arr.push(randomInteger(1,20));
+		
+	}
+	
+	for (var j in arr){
+		if (arr[j]%3==0) arr2.push(arr[j]);
+
+	}
+
+
+	alert( "Task 3" + "\n" + "Generated:" + arr + '\n' + "Sorted:" + arr2);
+}
+third();
+
+function forth1(){
+	alert("Task 4: Дана скобочная последовательность: [((())()(())]]) Последовательность не правильная, чтоб она была правильная нужно открыть последовательность круглой скобкой добавить ')' после первой серии круглых скобок и открыть вторые квадратные скобки вначале" + "\n"+" Должно выглядеть так:([[((()))()(())]]) ");
+
+}
+
+forth1();
+  </script>
+
+ 
+
+</body>
+
+</html>
