@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+    // 1
+    function quoter() {
+        var a, b = 10;
+        a = Number(prompt('value', ''));
+        if (a % 2 == 0) {
+            a = a * b;
+            console.log(a);
+        } else {
+            a = a + b;
+            console.log(a);
+        }
+    }
+    function coordinates(x, y) {
+        if (x == 0 && y == 0) {
+            console.log('Start coordinates system ' + x, + y)
+        } else if (x >= 0 && y >= 0) {
+            console.log('1quarter ' + x, +y)
+        }
+        else if (x <= 0 && y >= 0) {
+            console.log('2quarter ' + x, +y)
+        } else if (x <= 0 && y <= 0) {
+            console.log('3quarter ' + x, +y)
+        } else if (x >= 0 && y <= 0) {
+            console.log('4quarter ' + x + y);
+        }
+    }
+    function positiveNumbers(a, b, c) {
+        if (a > 0 && b > 0 && c > 0) {
+            console.log(a + b + c)
+        } else {
+            console.log('Use positive values.')
+        }
+    }
+    function max(x, y, z) {
+        if (((x * y * z) + 3) > ((x + y + z) + 3)) {
+            console.log('((x * y * z) + 3) bigger than ((x + y + z) + 3)');
+        } else {
+            console.log('((x * y * z) + 3) lower than ((x + y + z) + 3)');
+        }
+    }
+    function ratingStudent(firstName, secondName, rating) {
+        if (rating <= 19) {
+            console.log(firstName, secondName + 'have rating F.')
+        }
+        else if (rating <= 39) {
+            console.log(firstName, secondName + 'have rating E.')
+        }
+        else if (rating <= 59) {
+            console.log(firstName, secondName + 'have rating D.')
+        }
+        else if (rating <= 74) {
+            console.log(firstName, secondName + 'have rating C.')
+        }
+        else if (rating <= 89) {
+            console.log(firstName, secondName + 'have rating B.')
+        }
+        else if (rating <= 100) {
+            console.log(firstName, secondName + 'have rating A.')
+        }
+    }
+
+
+
+</script>
+
+</body>
+</html>

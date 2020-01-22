@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	function getWeekDay(date) {
+  		var days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+
+  		return days[date.getDay()];
+	}
+
+	var date = new Date(2020, 6, 1); // 1 июля 2020
+	//alert( getWeekDay(date) ); 
+
+//вариант по проще 
+ function dayOfWeek(day) {
+        switch (day) {
+            case 1:
+                console.log('Monday');
+                break;
+            case 2:
+                console.log('Tuesday');
+                break;
+            case 3:
+                console.log('Wednesday');
+                break;
+            case 4:
+                console.log('Thursday');
+                break;
+            case 5:
+                console.log('Friday');
+                break;
+            case 6:
+                console.log('Saturday');
+                break;
+            case 7:
+                console.log('Sunday');
+                break;
+            default:
+                console.log('There are 7 days in a week :)')
+                break;
+        }
+    }
+
+
+function numberToWord(num){
+  var ones = ['', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять',
+              'десять', 'одинадцать', 'двенадцать', 'тринадцать', 'четрынадцать', 'пятнаднцать', 'шестнадцать',
+              'seventeen', 'eighteen', 'nineteen'];
+  var tens = ['', '', 'двадцать', 'тридцать', 'сорок', 'пятдесят', 'шестдесят', 'семдесят', 'восемьдесят',
+              'девяносто'];
+
+  var numString = num.toString();
+
+ 
+
+  if (num === 0) return 'zero';
+
+  if (num < 20) {
+    return ones[num];
+  }
+
+  if (numString.length === 2) {
+    return tens[numString[0]] + ' ' + ones[numString[1]];
+  }
+
+  e
+}
+
+//console.log(numberToWord(34));
+
+
+
+
+
+
+</script>
+</body>
+</html>

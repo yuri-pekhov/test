@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title></title>
+ </head>
+ <body>
+    <script type="text/javascript">
+        function sumEven() {
+        let exampleArray = [],
+            counterEven = 0,
+            sumEven = 0;
+        for (i = 0; i <= 99; i++) {
+            exampleArray.push(Math.round(Math.random() * 10));
+        }
+        for (i = 0; i <= 99; i++) {
+            if (exampleArray[i] % 2 == 0) {
+                counterEven++;
+                sumEven += exampleArray[i];
+            }
+        }
+        console.log(counterEven  + ', ' + sumEven);
+    }
+    function simpleNum() {
+        let exampleArray = [],
+            counterSimpleNum = 0;
+        for (i = 0; i <= 9; i++) {
+            exampleArray.push(Math.round(Math.random() * 10));
+        }
+        for (i = 0; i <= 9; i++) {
+            if (exampleArray[i] / exampleArray[i] == 1 && exampleArray[i] / 1 == exampleArray[i]) {
+                counterSimpleNum++;
+            }
+        }
+        console.log(exampleArray);
+        console.log(counterSimpleNum);
+    }
+    function factorial(number) {
+        let factorial = 1;
+        for (i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+        console.log(factorial);
+    }
+    function sumNumber(number) {
+        let sum = 0;
+        for (i = 1; i <= number; i++) {
+            sum += i;
+        }
+        console.log(sum);
+    }
+    function reverseNumber(number) {
+        console.log(Number(String(number).split('').reverse().join("")))
+    }
+
+
+        
+    </script>
+ 
+ </body>
+ </html>
+
+
+
+
+ 
